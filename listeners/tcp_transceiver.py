@@ -25,7 +25,7 @@ def tcp_service():
     except socket.error as msg:
         print("Could not create socket. Error Code: ", str(msg[0]), "Error: ", msg[1])
         sys.exit(0)
-    ip = '10.100.6.47'
+    ip = '10.0.2.16'
     port = 1141
     address = (ip, port)
     try:
