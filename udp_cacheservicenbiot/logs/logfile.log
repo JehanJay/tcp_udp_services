@@ -1,0 +1,84 @@
+2019-12-27 03:44:25,544 __main__ INFO [-] Socket Bound to port 1121
+2019-12-27 03:44:25,544 __main__ INFO [-] Started Listening 0.0.0.0:1121
+2019-12-27 03:44:25,553 __main__ INFO RabbitMQ Subcribed
+2019-12-27 03:47:00,887 __main__ INFO Action Meter Number : 012019021502
+2019-12-27 03:47:00,888 __main__ INFO Action Received : OPEN
+2019-12-27 03:48:00,810 __main__ INFO Action Meter Number : 012019021502
+2019-12-27 03:48:00,810 __main__ INFO Action Received : OPEN
+2019-12-27 03:48:00,876 __main__ INFO Received action: 00 00 FE FE 68 02 15 02 19 20 01 68 0C 40 01 B5 A8 7A 8D 20 AC 69 C5 A7 83 F8 16 
+2019-12-27 03:48:00,876 __main__ INFO Saving the action for the 012019021502 in the cache
+2019-12-27 03:54:15,992 __main__ INFO Data published to the IoT platform
+2019-12-27 03:54:15,993 __main__ INFO No cache actions..No response sent
+2019-12-27 04:06:55,201 __main__ INFO [-] Socket Bound to port 1121
+2019-12-27 04:06:55,201 __main__ INFO [-] Started Listening 0.0.0.0:1121
+2019-12-27 04:06:55,210 __main__ INFO RabbitMQ Subcribed
+2019-12-27 04:08:27,674 __main__ INFO [-] Received data from the client :('123.231.87.249', 3621)
+2019-12-27 04:08:27,674 __main__ INFO 90 00 00 00 68 02 15 02 19 20 01 68 2b 01 02 01 40 12 23 04 00 00 00 00 00 00 00 00 00 02 09 0d 06 07 06 11 0c 08 08 01 00 00 01 00 01 00 df 02 10 42 fb ff ff 21 33 10 b9 16
+2019-12-27 04:08:27,674 __main__ INFO Data published to the IoT platform
+2019-12-27 04:08:27,675 __main__ INFO Active Meter Number : 012019021502
+2019-12-27 04:08:27,675 __main__ INFO No prior actions received for: 012019021502
+2019-12-27 04:08:27,675 __main__ INFO No cache actions..No response sent
+2019-12-27 04:09:03,140 __main__ INFO Action Meter Number : 012019021502
+2019-12-27 04:09:03,140 __main__ INFO Action Received : OPEN
+2019-12-27 04:09:03,239 __main__ INFO Received action: 00 00 FE FE 68 02 15 02 19 20 01 68 0C 40 01 B5 A8 7A 8D 20 AC 69 C5 A7 83 F8 16 
+2019-12-27 04:09:03,239 __main__ INFO Saving the action for the 012019021502 in the cache
+2019-12-27 04:09:22,184 __main__ INFO Action Meter Number : 012019021502
+2019-12-27 04:09:22,184 __main__ INFO Action Received : CLOSE
+2019-12-27 04:09:22,210 __main__ INFO Received action: 00 00 FE FE 68 02 15 02 19 20 01 68 0C 40 01 63 A0 50 12 1F 9E 42 F5 67 93 C3 16 
+2019-12-27 04:09:22,211 __main__ INFO Saving the action for the 012019021502 in the cache
+2019-12-27 04:09:31,440 __main__ INFO Action Meter Number : 012019021502
+2019-12-27 04:09:31,441 __main__ INFO Action Received : OPEN
+2019-12-27 04:09:31,462 __main__ INFO Received action: 00 00 FE FE 68 02 15 02 19 20 01 68 0C 40 01 B5 A8 7A 8D 20 AC 69 C5 A7 83 F8 16 
+2019-12-27 04:09:31,462 __main__ INFO Saving the action for the 012019021502 in the cache
+2019-12-27 04:10:53,735 __main__ INFO [-] Received data from the client :('123.231.87.249', 3622)
+2019-12-27 04:10:53,740 __main__ INFO 90 00 00 00 68 02 15 02 19 20 01 68 2b 01 02 01 40 12 23 04 00 00 00 00 00 00 00 00 00 02 09 0d 06 07 06 11 0c 08 08 01 00 00 01 00 01 00 df 02 10 42 fb ff ff 21 33 20 b9 16
+2019-12-27 04:10:53,741 __main__ INFO Data published to the IoT platform
+2019-12-27 04:10:53,741 __main__ INFO Active Meter Number : 012019021502
+2019-12-27 04:10:53,741 __main__ INFO No prior actions received for: 012019021502
+2019-12-27 04:10:53,741 __main__ INFO No cache actions..No response sent
+2019-12-27 04:12:12,430 __main__ INFO Action Meter Number : 012019021502
+2019-12-27 04:12:12,431 __main__ INFO Action Received : OPEN
+2019-12-27 04:12:12,482 __main__ INFO Received action: 00 00 FE FE 68 02 15 02 19 20 01 68 0C 40 01 B5 A8 7A 8D 20 AC 69 C5 A7 83 F8 16 
+2019-12-27 04:12:12,482 __main__ INFO Saving the action for the 012019021502 in the cache
+2019-12-27 04:12:12,483 __main__ INFO Saved successfully
+2019-12-27 04:12:34,169 __main__ INFO [-] Received data from the client :('123.231.87.249', 3622)
+2019-12-27 04:12:34,169 __main__ INFO 90 00 00 00 68 02 15 02 19 20 01 68 2b 01 02 01 40 12 23 04 00 00 00 00 00 00 00 00 00 02 09 0d 06 07 06 11 0c 08 08 01 00 00 01 00 01 00 df 02 10 42 fb ff ff 21 33 21 b9 16
+2019-12-27 04:12:34,170 __main__ INFO Data published to the IoT platform
+2019-12-27 04:12:34,170 __main__ INFO Active Meter Number : 012019021502
+2019-12-27 04:12:34,175 __main__ INFO Fetched the action successfully from cache
+2019-12-27 04:12:34,175 __main__ INFO [-] Response sent to the client :('123.231.87.249', 3622)
+2019-12-27 04:12:35,176 __main__ INFO [-] Actuating frame sent to the client :('123.231.87.249', 3622)
+2019-12-27 04:14:13,971 __main__ INFO [-] Received data from the client :('175.157.62.78', 55557)
+2019-12-27 04:14:13,971 __main__ INFO 90 00 00 00 68 01 15 02 19 20 01 68 2b 01 02 01 40 12 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 ff 03 10 d6 fd ff ff 22 30 03 db 16
+2019-12-27 04:14:13,972 __main__ INFO Data published to the IoT platform
+2019-12-27 04:14:13,972 __main__ INFO Active Meter Number : 012019021501
+2019-12-27 04:14:13,972 __main__ INFO No prior actions received for: 012019021501
+2019-12-27 04:14:13,972 __main__ INFO No cache actions..No response sent
+2019-12-27 04:25:06,580 __main__ INFO [-] Socket Bound to port 1121
+2019-12-27 04:25:06,580 __main__ INFO [-] Started Listening 0.0.0.0:1121
+2019-12-27 04:25:06,588 __main__ INFO RabbitMQ Subcribed
+2019-12-27 04:25:17,721 __main__ INFO Action Meter Number : 012019021502
+2019-12-27 04:25:17,722 __main__ INFO Action Received : OPEN
+2019-12-27 04:25:17,743 __main__ INFO Received action: 00 00 FE FE 68 02 15 02 19 20 01 68 0C 40 01 B5 A8 7A 8D 20 AC 69 C5 A7 83 F8 16 
+2019-12-27 04:25:17,743 __main__ INFO Saving the action for the 012019021502 in the cache
+2019-12-27 04:25:17,744 __main__ INFO Saved successfully
+2019-12-27 04:25:39,094 __main__ INFO [-] Received data from the client :('123.231.87.249', 3623)
+2019-12-27 04:25:39,095 __main__ INFO 90 00 00 00 68 02 15 02 19 20 01 68 2b 01 02 01 40 12 23 04 00 00 00 00 00 00 00 00 00 02 09 0d 06 07 06 11 0c 08 08 01 00 00 01 00 01 00 df 02 10 42 fb ff ff 21 33 20 b9 16
+2019-12-27 04:25:39,095 __main__ INFO Data published to the IoT platform
+2019-12-27 04:25:39,095 __main__ INFO Active Meter Number : 012019021502
+2019-12-27 04:25:39,095 __main__ INFO Fetched the action successfully from cache
+2019-12-27 04:25:39,096 __main__ INFO [-] Response sent to the client :('123.231.87.249', 3623): 00 00 FE FE 68 02 15 02 19 20 01 68 02 08 02 2F 16
+2019-12-27 04:25:40,097 __main__ INFO [-] Actuating frame sent to the client :('123.231.87.249', 3623): 00 00 FE FE 68 02 15 02 19 20 01 68 0C 40 01 B5 A8 7A 8D 20 AC 69 C5 A7 83 F8 16 
+2019-12-27 04:26:07,619 __main__ INFO [-] Received data from the client :('123.231.87.249', 3623)
+2019-12-27 04:26:07,619 __main__ INFO 90 00 00 00 68 02 15 02 19 20 01 68 2b 01 02 01 40 12 23 04 00 00 00 00 00 00 00 00 00 02 09 0d 06 07 06 11 0c 08 08 01 00 00 01 00 01 00 df 02 10 42 fb ff ff 21 33 20 b9 16
+2019-12-27 04:26:07,620 __main__ INFO Data published to the IoT platform
+2019-12-27 04:26:07,620 __main__ INFO Active Meter Number : 012019021502
+2019-12-27 04:26:07,620 __main__ INFO Fetched the action successfully from cache
+2019-12-27 04:26:07,620 __main__ INFO [-] Response sent to the client :('123.231.87.249', 3623): 00 00 FE FE 68 02 15 02 19 20 01 68 02 08 02 2F 16
+2019-12-27 04:26:08,621 __main__ INFO [-] Actuating frame sent to the client :('123.231.87.249', 3623): 00 00 FE FE 68 02 15 02 19 20 01 68 0C 40 01 B5 A8 7A 8D 20 AC 69 C5 A7 83 F8 16 
+2019-12-27 04:26:53,604 __main__ INFO [-] Received data from the client :('123.231.87.249', 3623)
+2019-12-27 04:26:53,604 __main__ INFO 90 00 00 00 68 02 15 02 19 20 01 68 2b 01 02 01 40 12 23 04 00 00 00 00 00 00 00 00 00 02 09 0d 06 07 06 11 0c 08 08 01 00 00 01 00 01 00 df 02 10 42 fb ff ff 21 33 21 b9 16
+2019-12-27 04:26:53,605 __main__ INFO Data published to the IoT platform
+2019-12-27 04:26:53,605 __main__ INFO Active Meter Number : 012019021502
+2019-12-27 04:26:53,605 __main__ INFO No prior actions received for: 012019021502
+2019-12-27 04:26:53,605 __main__ INFO No cache actions..No response sent
