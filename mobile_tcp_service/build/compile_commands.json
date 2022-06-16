@@ -1,0 +1,13 @@
+[
+{
+  "directory": "/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/tcpclient.dir/client.cpp.o -c /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/client.cpp",
+  "file": "/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/client.cpp"
+},
+
+{
+  "directory": "/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9    -g   -o CMakeFiles/tcpservice.dir/server.cpp.o -c /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/server.cpp",
+  "file": "/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/server.cpp"
+}
+]

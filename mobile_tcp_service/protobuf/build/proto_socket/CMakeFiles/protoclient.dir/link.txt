@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/protoclient.dir/client.cpp.o  -o protoclient  -Wl,-rpath,/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/message_definitions:/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/protobuf_src/lib ../message_definitions/libProtoMessages.so ../../protobuf_src/lib/libprotobuf.so -lpthread 

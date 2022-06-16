@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/testtcp.dir/test.cpp.o CMakeFiles/testtcp.dir/hello.pb.cc.o  -o testtcp  /usr/local/lib/libprotobuf.a -lpthread 

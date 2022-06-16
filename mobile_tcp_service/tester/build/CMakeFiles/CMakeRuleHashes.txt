@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+643e01467cb1ab0a5bdc15d2d2276e2c hello.pb.h

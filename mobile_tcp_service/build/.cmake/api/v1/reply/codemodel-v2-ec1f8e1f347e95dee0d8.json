@@ -1,0 +1,68 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.6"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "TCPSERVICE",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "tcpclient::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tcpclient-Debug-9f0041da2117ae269d1a.json",
+					"name" : "tcpclient",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tcpservice::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tcpservice-Debug-b0da085bb8facb02c046.json",
+					"name" : "tcpservice",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/build",
+		"source" : "/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

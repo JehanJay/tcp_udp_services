@@ -1,0 +1,5 @@
+# ninja log v5
+0	178	1654789206730217102	CMakeFiles/tcpclient.dir/client.cpp.o	a30a74f56070367d
+0	179	1654789206730217102	CMakeFiles/tcpservice.dir/server.cpp.o	97482d829761dfe0
+179	223	1654789206774215981	tcpclient	a81ca758eb5ba57c
+179	223	1654789206774215981	tcpservice	e5aede9ddd3f50f2

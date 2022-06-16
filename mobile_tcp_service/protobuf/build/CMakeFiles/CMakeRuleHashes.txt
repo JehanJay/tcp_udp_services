@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+dff3d8b0a50dc62af4f027d429ddcb99 message_definitions/CMakeFiles/generate_protobuf_cpp
+8d478ed1750a29faeb030a5381ea8a59 message_definitions/hello.pb.h
