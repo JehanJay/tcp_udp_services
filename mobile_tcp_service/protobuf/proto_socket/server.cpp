@@ -95,21 +95,21 @@ FINISH:;
 
 void readBody(int csock, google::protobuf::uint32 siz)
 {
-        int bytecount;
-        // opa3l::Person payload;
-        char buffer[siz + 4]; // size of the payload and hdr
-        // Read the entire buffer including the hdr
-        if ((bytecount = recv(csock, (void *)buffer, 4 + siz, MSG_WAITALL)) == -1)
-        {
-                fprintf(stderr, "Error receiving data %d\n", errno);
-        }
-        cout << "Second read byte count is " << bytecount << endl;
+        // int bytecount;
+        // // opa3l::Person payload;
+        // char buffer[siz + 4]; // size of the payload and hdr
+        // // Read the entire buffer including the hdr
+        // if ((bytecount = recv(csock, (void *)buffer, 4 + siz, MSG_WAITALL)) == -1)
+        // {
+        //         fprintf(stderr, "Error receiving data %d\n", errno);
+        // }
+        // cout << "Second read byte count is " << bytecount << endl;
 
         
-        // const auto payload_received = drives::proto::parseFromArray<opa3l::Person>(buffer->GetPtr(), buffer->GetSize());
-        const auto payload_received = drives::proto::parseFromArray<opa3l::Person>((void *)buffer, siz+4);
+        // // const auto payload_received = drives::proto::parseFromArray<opa3l::Person>(buffer->GetPtr(), buffer->GetSize());
+        // const auto payload_received = drives::proto::parseFromArray<opa3l::Person>((void *)buffer, siz+4);
 
-        cout << "payload_received " << payload_received.DebugString() << endl;
+        // cout << "payload_receivedddd \n" << payload_received.DebugString() << endl;
         // // Assign ArrayInputStream with enough memory
         // google::protobuf::io::ArrayInputStream ais(buffer, siz + 4);
         // CodedInputStream coded_input(&ais);
@@ -124,8 +124,8 @@ void readBody(int csock, google::protobuf::uint32 siz)
         // // Once the embedded message has been parsed, PopLimit() is called to undo the limit
         // coded_input.PopLimit(msgLimit);
         // Print the message
-        cout << "Message is: \n"
-             << payload_received.DebugString();
+        // cout << "Message is: \n"
+        //      << payload_received.DebugString();
 }
 
 void *SocketHandler(void *lp)
@@ -147,12 +147,12 @@ void *SocketHandler(void *lp)
                 }
                 else if (bytecount == 0)
                         break;
-                cout << "\nFirst read byte count is " << bytecount << endl;
+                // cout << "\nFirst read byte count is " << bytecount << endl;
 
                 const auto payload_received = drives::proto::parseFromArray<opa3l::Person>((void *)buffer, 1000);
 
-                cout << "payload_received " << payload_received.DebugString() << endl;
-
+                cout << "payload received:  \n" << payload_received.DebugString() << endl;
+                        break;
                 // readBody(*csock, readHdr(buffer));
         }
 

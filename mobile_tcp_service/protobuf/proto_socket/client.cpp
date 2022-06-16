@@ -83,21 +83,31 @@ int main(int argv, char **argc)
                 }
         }
 
-        for (int j = 0; j < 10; j++)
+        // for (int j = 0; j < 10; j++)
+        // {
+        //         // if ((bytecount = send(hsock, (void *)pkt, siz, 0)) == -1)
+        //         // {
+        //         //         fprintf(stderr, "Error sending data %d\n", errno);
+        //         //         goto FINISH;
+        //         // }
+        //         if ((bytecount = send(hsock, (void *)protoMessage.get_ptr(), protoMessage.get_size(), 0)) == -1)
+        //         {
+        //                 fprintf(stderr, "Error sending data %d\n", errno);
+        //                 goto FINISH;
+        //         }
+        //         printf("[%i] Sent the proto msg as bytes with size %d\n", j, bytecount);
+        //         usleep(1);
+        // }
+
+
+        if ((bytecount = send(hsock, (void *)protoMessage.get_ptr(), protoMessage.get_size(), 0)) == -1)
         {
-                // if ((bytecount = send(hsock, (void *)pkt, siz, 0)) == -1)
-                // {
-                //         fprintf(stderr, "Error sending data %d\n", errno);
-                //         goto FINISH;
-                // }
-                if ((bytecount = send(hsock, (void *)protoMessage.get_ptr(), protoMessage.get_size(), 0)) == -1)
-                {
-                        fprintf(stderr, "Error sending data %d\n", errno);
-                        goto FINISH;
-                }
-                printf("[%i] Sent the proto msg as bytes with size %d\n", j, bytecount);
-                usleep(1);
+                fprintf(stderr, "Error sending data %d\n", errno);
+                goto FINISH;
         }
+        printf("[%i] Sent the proto msg as bytes with size: %d\n ", bytecount);
+        usleep(1);
+        
 
         delete pkt;
 
