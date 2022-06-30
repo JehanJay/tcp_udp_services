@@ -23,7 +23,8 @@ void *SocketHandler(void *);
 int main(int argv, char **argc)
 {
 
-        int host_port = 1101;
+        // int host_port = 1102; // do not change 1101 in emulator
+        int host_port = 1102; // do not change 1101 in emulator & changed from 1101 to accomodate transceiver
         struct sockaddr_in my_addr;
         int hsock;
         int *p_int;

@@ -36,8 +36,11 @@ int main(int argv, char **argc)
         drives::proto::Serialized protoMessage = drives::proto::Serialized(payload);
         
 
+        // int host_port = 1101;
+        // char *host_name = (char *)"127.0.0.1"; //change this in emulator
+
         int host_port = 1101;
-        char *host_name = (char *)"127.0.0.1";
+        char *host_name = (char *)"127.0.0.1"; //change this in emulator
 
         struct sockaddr_in my_addr;
 

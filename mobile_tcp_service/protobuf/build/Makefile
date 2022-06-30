@@ -222,6 +222,32 @@ generate_protobuf_cpp/fast:
 .PHONY : generate_protobuf_cpp/fast
 
 #=============================================================================
+# Target rules for targets named prototransceiver_mpc
+
+# Build rule for target.
+prototransceiver_mpc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 prototransceiver_mpc
+.PHONY : prototransceiver_mpc
+
+# fast build rule for target.
+prototransceiver_mpc/fast:
+	$(MAKE) -f proto_socket/CMakeFiles/prototransceiver_mpc.dir/build.make proto_socket/CMakeFiles/prototransceiver_mpc.dir/build
+.PHONY : prototransceiver_mpc/fast
+
+#=============================================================================
+# Target rules for targets named prototransceiver
+
+# Build rule for target.
+prototransceiver: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 prototransceiver
+.PHONY : prototransceiver
+
+# fast build rule for target.
+prototransceiver/fast:
+	$(MAKE) -f proto_socket/CMakeFiles/prototransceiver.dir/build.make proto_socket/CMakeFiles/prototransceiver.dir/build
+.PHONY : prototransceiver/fast
+
+#=============================================================================
 # Target rules for targets named protoserver
 
 # Build rule for target.
@@ -264,6 +290,8 @@ help:
 	@echo "... protobuf_install_target_cpp_srcs"
 	@echo "... protobuf_install_target_cpp_hdrs"
 	@echo "... generate_protobuf_cpp"
+	@echo "... prototransceiver_mpc"
+	@echo "... prototransceiver"
 	@echo "... protoserver"
 	@echo "... protoclient"
 .PHONY : help

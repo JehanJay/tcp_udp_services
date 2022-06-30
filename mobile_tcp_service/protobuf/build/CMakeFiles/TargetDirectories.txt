@@ -21,11 +21,13 @@
 /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/message_definitions/mobile_message_definitions/CMakeFiles/list_install_components.dir
 /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/message_definitions/mobile_message_definitions/CMakeFiles/rebuild_cache.dir
 /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/message_definitions/mobile_message_definitions/CMakeFiles/edit_cache.dir
-/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/install/local.dir
 /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/install.dir
 /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/list_install_components.dir
 /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/rebuild_cache.dir
 /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/edit_cache.dir
+/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/install/local.dir
+/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/prototransceiver_mpc.dir
+/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/prototransceiver.dir
 /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/protoserver.dir
 /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/install/strip.dir
 /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket/CMakeFiles/protoclient.dir

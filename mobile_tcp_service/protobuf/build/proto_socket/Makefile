@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_s
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -112,6 +100,18 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -155,6 +155,36 @@ preinstall/fast:
 depend:
 	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+# Convenience name for target.
+proto_socket/CMakeFiles/prototransceiver_mpc.dir/rule:
+	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f CMakeFiles/Makefile2 proto_socket/CMakeFiles/prototransceiver_mpc.dir/rule
+.PHONY : proto_socket/CMakeFiles/prototransceiver_mpc.dir/rule
+
+# Convenience name for target.
+prototransceiver_mpc: proto_socket/CMakeFiles/prototransceiver_mpc.dir/rule
+
+.PHONY : prototransceiver_mpc
+
+# fast build rule for target.
+prototransceiver_mpc/fast:
+	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f proto_socket/CMakeFiles/prototransceiver_mpc.dir/build.make proto_socket/CMakeFiles/prototransceiver_mpc.dir/build
+.PHONY : prototransceiver_mpc/fast
+
+# Convenience name for target.
+proto_socket/CMakeFiles/prototransceiver.dir/rule:
+	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f CMakeFiles/Makefile2 proto_socket/CMakeFiles/prototransceiver.dir/rule
+.PHONY : proto_socket/CMakeFiles/prototransceiver.dir/rule
+
+# Convenience name for target.
+prototransceiver: proto_socket/CMakeFiles/prototransceiver.dir/rule
+
+.PHONY : prototransceiver
+
+# fast build rule for target.
+prototransceiver/fast:
+	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f proto_socket/CMakeFiles/prototransceiver.dir/build.make proto_socket/CMakeFiles/prototransceiver.dir/build
+.PHONY : prototransceiver/fast
 
 # Convenience name for target.
 proto_socket/CMakeFiles/protoserver.dir/rule:
@@ -240,17 +270,73 @@ server.cpp.s:
 	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f proto_socket/CMakeFiles/protoserver.dir/build.make proto_socket/CMakeFiles/protoserver.dir/server.cpp.s
 .PHONY : server.cpp.s
 
+transceiver.o: transceiver.cpp.o
+
+.PHONY : transceiver.o
+
+# target to build an object file
+transceiver.cpp.o:
+	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f proto_socket/CMakeFiles/prototransceiver.dir/build.make proto_socket/CMakeFiles/prototransceiver.dir/transceiver.cpp.o
+.PHONY : transceiver.cpp.o
+
+transceiver.i: transceiver.cpp.i
+
+.PHONY : transceiver.i
+
+# target to preprocess a source file
+transceiver.cpp.i:
+	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f proto_socket/CMakeFiles/prototransceiver.dir/build.make proto_socket/CMakeFiles/prototransceiver.dir/transceiver.cpp.i
+.PHONY : transceiver.cpp.i
+
+transceiver.s: transceiver.cpp.s
+
+.PHONY : transceiver.s
+
+# target to generate assembly for a file
+transceiver.cpp.s:
+	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f proto_socket/CMakeFiles/prototransceiver.dir/build.make proto_socket/CMakeFiles/prototransceiver.dir/transceiver.cpp.s
+.PHONY : transceiver.cpp.s
+
+transceiver_mpc.o: transceiver_mpc.cpp.o
+
+.PHONY : transceiver_mpc.o
+
+# target to build an object file
+transceiver_mpc.cpp.o:
+	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f proto_socket/CMakeFiles/prototransceiver_mpc.dir/build.make proto_socket/CMakeFiles/prototransceiver_mpc.dir/transceiver_mpc.cpp.o
+.PHONY : transceiver_mpc.cpp.o
+
+transceiver_mpc.i: transceiver_mpc.cpp.i
+
+.PHONY : transceiver_mpc.i
+
+# target to preprocess a source file
+transceiver_mpc.cpp.i:
+	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f proto_socket/CMakeFiles/prototransceiver_mpc.dir/build.make proto_socket/CMakeFiles/prototransceiver_mpc.dir/transceiver_mpc.cpp.i
+.PHONY : transceiver_mpc.cpp.i
+
+transceiver_mpc.s: transceiver_mpc.cpp.s
+
+.PHONY : transceiver_mpc.s
+
+# target to generate assembly for a file
+transceiver_mpc.cpp.s:
+	cd /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build && $(MAKE) -f proto_socket/CMakeFiles/prototransceiver_mpc.dir/build.make proto_socket/CMakeFiles/prototransceiver_mpc.dir/transceiver_mpc.cpp.s
+.PHONY : transceiver_mpc.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... install/local"
+	@echo "... prototransceiver_mpc"
+	@echo "... prototransceiver"
 	@echo "... protoserver"
 	@echo "... install/strip"
 	@echo "... protoclient"
@@ -260,6 +346,12 @@ help:
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
+	@echo "... transceiver.o"
+	@echo "... transceiver.i"
+	@echo "... transceiver.s"
+	@echo "... transceiver_mpc.o"
+	@echo "... transceiver_mpc.i"
+	@echo "... transceiver_mpc.s"
 .PHONY : help
 
 

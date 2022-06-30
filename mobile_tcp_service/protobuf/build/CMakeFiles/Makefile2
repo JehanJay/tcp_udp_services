@@ -117,6 +117,8 @@ message_definitions/mobile_message_definitions/clean:
 # Directory level rules for directory proto_socket
 
 # Recursive "all" directory target.
+proto_socket/all: proto_socket/CMakeFiles/prototransceiver_mpc.dir/all
+proto_socket/all: proto_socket/CMakeFiles/prototransceiver.dir/all
 proto_socket/all: proto_socket/CMakeFiles/protoserver.dir/all
 proto_socket/all: proto_socket/CMakeFiles/protoclient.dir/all
 
@@ -128,6 +130,8 @@ proto_socket/preinstall:
 .PHONY : proto_socket/preinstall
 
 # Recursive "clean" directory target.
+proto_socket/clean: proto_socket/CMakeFiles/prototransceiver_mpc.dir/clean
+proto_socket/clean: proto_socket/CMakeFiles/prototransceiver.dir/clean
 proto_socket/clean: proto_socket/CMakeFiles/protoserver.dir/clean
 proto_socket/clean: proto_socket/CMakeFiles/protoclient.dir/clean
 
@@ -269,6 +273,60 @@ generate_protobuf_cpp: message_definitions/CMakeFiles/generate_protobuf_cpp.dir/
 message_definitions/CMakeFiles/generate_protobuf_cpp.dir/clean:
 	$(MAKE) -f message_definitions/CMakeFiles/generate_protobuf_cpp.dir/build.make message_definitions/CMakeFiles/generate_protobuf_cpp.dir/clean
 .PHONY : message_definitions/CMakeFiles/generate_protobuf_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target proto_socket/CMakeFiles/prototransceiver_mpc.dir
+
+# All Build rule for target.
+proto_socket/CMakeFiles/prototransceiver_mpc.dir/all: message_definitions/CMakeFiles/ProtoMessages.dir/all
+	$(MAKE) -f proto_socket/CMakeFiles/prototransceiver_mpc.dir/build.make proto_socket/CMakeFiles/prototransceiver_mpc.dir/depend
+	$(MAKE) -f proto_socket/CMakeFiles/prototransceiver_mpc.dir/build.make proto_socket/CMakeFiles/prototransceiver_mpc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/CMakeFiles --progress-num=11,12 "Built target prototransceiver_mpc"
+.PHONY : proto_socket/CMakeFiles/prototransceiver_mpc.dir/all
+
+# Build rule for subdir invocation for target.
+proto_socket/CMakeFiles/prototransceiver_mpc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 proto_socket/CMakeFiles/prototransceiver_mpc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/CMakeFiles 0
+.PHONY : proto_socket/CMakeFiles/prototransceiver_mpc.dir/rule
+
+# Convenience name for target.
+prototransceiver_mpc: proto_socket/CMakeFiles/prototransceiver_mpc.dir/rule
+
+.PHONY : prototransceiver_mpc
+
+# clean rule for target.
+proto_socket/CMakeFiles/prototransceiver_mpc.dir/clean:
+	$(MAKE) -f proto_socket/CMakeFiles/prototransceiver_mpc.dir/build.make proto_socket/CMakeFiles/prototransceiver_mpc.dir/clean
+.PHONY : proto_socket/CMakeFiles/prototransceiver_mpc.dir/clean
+
+#=============================================================================
+# Target rules for target proto_socket/CMakeFiles/prototransceiver.dir
+
+# All Build rule for target.
+proto_socket/CMakeFiles/prototransceiver.dir/all: message_definitions/CMakeFiles/ProtoMessages.dir/all
+	$(MAKE) -f proto_socket/CMakeFiles/prototransceiver.dir/build.make proto_socket/CMakeFiles/prototransceiver.dir/depend
+	$(MAKE) -f proto_socket/CMakeFiles/prototransceiver.dir/build.make proto_socket/CMakeFiles/prototransceiver.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/CMakeFiles --progress-num=9,10 "Built target prototransceiver"
+.PHONY : proto_socket/CMakeFiles/prototransceiver.dir/all
+
+# Build rule for subdir invocation for target.
+proto_socket/CMakeFiles/prototransceiver.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/CMakeFiles 6
+	$(MAKE) -f CMakeFiles/Makefile2 proto_socket/CMakeFiles/prototransceiver.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/CMakeFiles 0
+.PHONY : proto_socket/CMakeFiles/prototransceiver.dir/rule
+
+# Convenience name for target.
+prototransceiver: proto_socket/CMakeFiles/prototransceiver.dir/rule
+
+.PHONY : prototransceiver
+
+# clean rule for target.
+proto_socket/CMakeFiles/prototransceiver.dir/clean:
+	$(MAKE) -f proto_socket/CMakeFiles/prototransceiver.dir/build.make proto_socket/CMakeFiles/prototransceiver.dir/clean
+.PHONY : proto_socket/CMakeFiles/prototransceiver.dir/clean
 
 #=============================================================================
 # Target rules for target proto_socket/CMakeFiles/protoserver.dir

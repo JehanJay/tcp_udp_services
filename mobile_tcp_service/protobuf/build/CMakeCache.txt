@@ -218,6 +218,12 @@ MOBILE_COMMUNICATION_BINARY_DIR:STATIC=/home/jehan/opa3l_ws/src/drives_tcp_udp_s
 //Value Computed by CMake
 MOBILE_COMMUNICATION_SOURCE_DIR:STATIC=/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf
 
+//Value Computed by CMake
+PROTOTCPSERVICE_BINARY_DIR:STATIC=/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket
+
+//Value Computed by CMake
+PROTOTCPSERVICE_SOURCE_DIR:STATIC=/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/proto_socket
+
 //Path to a file.
 Protobuf_INCLUDE_DIR:PATH=/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/protobuf_src/include
 
@@ -241,12 +247,6 @@ Protobuf_PROTOC_LIBRARY_DEBUG:FILEPATH=/home/jehan/opa3l_ws/src/drives_tcp_udp_s
 
 //Path to a library.
 Protobuf_PROTOC_LIBRARY_RELEASE:FILEPATH=/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/protobuf_src/lib/libprotoc.so
-
-//Value Computed by CMake
-TCPCLIENT_BINARY_DIR:STATIC=/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/proto_socket
-
-//Value Computed by CMake
-TCPCLIENT_SOURCE_DIR:STATIC=/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/proto_socket
 
 //Value Computed by CMake
 messageDefinitions_BINARY_DIR:STATIC=/home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_service/protobuf/build/message_definitions

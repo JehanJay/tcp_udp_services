@@ -1,6 +1,6 @@
 
 
-project(TCPCLIENT)
+project(PROTOTCPSERVICE)
 
 set(CMAKE_CXX_STANDARD 20)
 
@@ -17,6 +17,8 @@ set(YOUR_DIRECTORY /home/jehan/opa3l_ws/src/drives_tcp_udp_services/mobile_tcp_s
 
 add_executable (protoclient ${YOUR_DIRECTORY}/client.cpp ${PROTO_SRCS} ${PROTO_HDRS})
 add_executable (protoserver ${YOUR_DIRECTORY}/server.cpp ${PROTO_SRCS} ${PROTO_HDRS})
+add_executable (prototransceiver ${YOUR_DIRECTORY}/transceiver.cpp ${PROTO_SRCS} ${PROTO_HDRS})
+add_executable (prototransceiver_mpc ${YOUR_DIRECTORY}/transceiver_mpc.cpp ${PROTO_SRCS} ${PROTO_HDRS})
 
 # target_link_libraries(protoclient ${Protobuf_LIBRARIES})
 # target_link_libraries(protoserver ${Protobuf_LIBRARIES})
@@ -31,7 +33,15 @@ PUBLIC
     ProtoMessages
 )
 
+target_link_libraries(prototransceiver
+PUBLIC
+    ProtoMessages
+)
 
+target_link_libraries(prototransceiver_mpc
+PUBLIC
+    ProtoMessages
+)
 
 
 
